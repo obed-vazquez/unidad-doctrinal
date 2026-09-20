@@ -1,0 +1,50 @@
+name: Publicar sitio web
+
+# El HTML del repositorio se regenera desde Drive y se copia tal cual, así que
+# no se edita en sitio: el tratamiento para buscadores se aplica aquí, al
+# construir. scripts/seo_postprocess.py es el mismo que se corre en local.
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.desplegar.outputs.page_url }}
+    steps:
+      - name: Obtener código
+        uses: actions/checkout@v4
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Post-procesar para buscadores
+        run: python scripts/seo_postprocess.py --src . --out _site --check
+
+      - name: Subir artefacto
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Desplegar en GitHub Pages
+        id: desplegar
+        uses: actions/deploy-pages@v4

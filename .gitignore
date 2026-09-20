@@ -89,3 +89,9 @@ Thumbs.db
 *.csv
 /.vscode/settings.json
 /Screenshots/
+
+# Salida del post-proceso para buscadores (scripts/seo_postprocess.py).
+# Es un artefacto de build: se regenera y nunca se versiona.
+/_site/
+/_preview/
+__pycache__/

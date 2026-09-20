@@ -7,11 +7,21 @@ And under the custom domain here: https://unidad.whiteweb.mx/
 ## 3) How to Deploy?
 any Pull Request pushed to `main` should trigger a new deploy in the published website (GitHub pages).
 
+> **Pages source:** this repository now deploys through GitHub Actions
+> ([deploy-pages.yml](.github/workflows/deploy-pages.yml)), not from the branch.
+> Set **Settings → Pages → Build and deployment → Source → GitHub Actions**.
+
 1. Delete the [src folder](https://drive.google.com/drive/folders/1MiUWTsCxjEG0fzK0-0Cs4InNYpjZu5LY) contents
 2. Run the [Convertion script](https://script.google.com/home/projects/1yyFqlnYmveKO9ma7_8lnyUfPyzsnNy9C4-TvMLR7P6lkm4XrPDEXixpj/edit)
 3. Download the contents of the src folder and move them to the [cloned] repository
 4. Generate a PR or push to main the new version
 5. Wait for the job to finish publishing the changes.
+
+The deploy runs [scripts/seo_postprocess.py](scripts/seo_postprocess.py) on its own,
+which is what gives the published documents their titles, descriptions and sitemap —
+there is nothing to run by hand. To preview that output before pushing:
+`python scripts/seo_postprocess.py --src . --out _preview --check`
+(`_preview/` is git-ignored, and so is the `_site/` the workflow builds.)
 
 ## 4) What are the Contribution guidelines?
 

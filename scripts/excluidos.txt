@@ -1,0 +1,17 @@
+# Documentos que NO se publican en el sitio web.
+#
+# Una ruta por línea, relativa a la raíz del repositorio y con "/" como
+# separador. Se admiten comodines: "*" y "?" (p. ej. "Recursos/*").
+# Las líneas vacías y las que empiezan con "#" se ignoran.
+#
+# A diferencia de las plantillas, que sí se publican pero con "noindex", lo que
+# se liste aquí no llega al sitio: no se copia ni entra al sitemap.
+
+# Obra de un tercero; además es la versión "para imprimir".
+Apologética/Análisis de Doctrinas/La Biblia/Is The Bible Inspired/The Canon of the Bible (1999) by Larry A. Taylor - To Print.html
+
+# Volcado de un PDF, no es un documento del proyecto.
+Recursos/Concordancia-Biblica-Strong-No.-4.pdf.html
+
+# Documento de proceso interno.
+Procesos Unidad Doctrinal/Instrucciones para exposiciones a LLM.html
