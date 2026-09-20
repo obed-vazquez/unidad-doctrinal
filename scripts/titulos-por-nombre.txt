@@ -1,0 +1,25 @@
+# Documentos cuyo título sale del nombre de archivo, ya revisados.
+#
+# El export de Drive no trae el estilo "Subtítulo" en estos, y el nombre de
+# archivo resultó ser un buen título. Al listarlos aquí dejan de reportarse y
+# dejan de contar para --max-fallback, de modo que el aviso quede reservado a
+# documentos nuevos que sí haya que mirar.
+#
+# Mismo formato que excluidos.txt: una ruta por línea, "/" como separador,
+# comodines "*" y "?" permitidos, "#" para comentarios.
+
+Apologética/Análisis de Doctrinas/God Related/Freedom innexistence.html
+Apologética/Análisis de Doctrinas/La Iglesia/Encomendación de ordenanzas a los hdD.html
+Apologética/Análisis de Doctrinas/La Iglesia/Global Unified Church.html
+Apologética/Análisis de Doctrinas/La Iglesia/Universal Unified Church.html
+Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/Carismaticos/Asambleas de Dios/Discrepancias en el Evangelio.html
+Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/JW/Jehovah Witnesses.html
+Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/Mormonismo/Mormonismo.html
+Apologética/Análisis de Doctrinas/Voluntad Manipulada.html
+Compilados de Información para Estudios/Proceso de Convicción.html
+Doctrinas/Dios habla por necesidad.html
+Doctrinas/Salvación y Principios/70 PROFECÍAS CUMPLIDAS EN JESUCRISTO.html
+
+# El título es malo, pero el documento ya sale con "noindex" por su nombre, así
+# que nunca llega al buscador.
+Compilados de Información para Estudios/La Iglesia/Untitled document.html

@@ -1,0 +1,31 @@
+name: Validar documentos
+
+# El deploy solo corre al integrar a main. Esto valida ANTES del merge que el
+# HTML que llega desde Drive sigue siendo tratable: si el Apps Script cambia su
+# marcado, el PR falla en vez de publicarse degradado.
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener código
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Revisar post-proceso sin publicar
+        run: |
+          python scripts/seo_postprocess.py \
+            --src . --out _site --dry-run --check --max-fallback 5
