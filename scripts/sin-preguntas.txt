@@ -1,0 +1,81 @@
+# Documentos que se publican pero NO llevan recuadro de preguntas.
+#
+# Mismo formato que excluidos.txt: una ruta por línea, "/" como separador,
+# comodines "*" y "?", "#" para comentar.
+#
+# Diferencia con los otros dos archivos:
+#   excluidos.txt      -> no se publica en absoluto
+#   sin-preguntas.txt  -> sí se publica, pero sin preguntas
+#
+# Los documentos que ya salen con "noindex" (plantillas, "Untitled document")
+# quedan exentos solos; no hace falta listarlos aquí.
+#
+# Razones válidas para listar algo aquí: índices y tablas de contenido,
+# documentos de proceso interno, plantillas sin llenar, y documentos tan cortos
+# que no responden ninguna pregunta.
+
+# --- Índices y tablas de contenido: son navegación, no responden preguntas ---
+Apologética/Indice Apologética .html
+Doctrinas/Indice de Doctrinas Biblicas.html
+Compilados de Información para Estudios/Indice de Compilados de Información para estudios.html
+Evangelio y Primeros pasos/0) Indice Platica Personal de Salvación y Compromiso.html
+
+# --- Procesos internos del proyecto, no material de consulta ---
+Procesos Unidad Doctrinal/*
+Doctrinas/Doctrinas Process/*
+Compilados de Información para Estudios/Procesos de Estudios/*
+Apologética/Análisis de Doctrinas/Procesos Análisis de Doctrinas/*
+
+# --- Plantillas sin llenar (contenido son marcadores tipo <Argumentación>) ---
+Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/Calvinismo/La Predestinación.html
+
+Apologética/Análisis de Doctrinas/El Bautismo no añade a la iglesia.html
+Apologética/Análisis de Doctrinas/La Iglesia/El Bautismo no añade a la iglesia.html
+Apologética/Análisis de Doctrinas/Existencia del pecado sin intención.html
+Apologética/Análisis de Doctrinas/La Iglesia/Frutos dignos de arrepentimiento.html
+Apologética/Análisis de Doctrinas/La Biblia/The Bible, Weapon of Desperate.html
+Apologética/Análisis de Doctrinas/La Iglesia/ordenación/Ordenación.html
+Apologética/Análisis de Doctrinas/La Iglesia/The Universal Membership of the Church.html
+Compilados de Información para Estudios/Jesucristo/Estudio de Cristo.html
+
+# --- Demasiado cortos para responder nada ---
+Compilados de Información para Estudios/Estudio de la Trinidad.html
+Apologética/Análisis de Doctrinas/God Related/Freedom innexistence.html
+Apologética/Análisis de Doctrinas/La Iglesia/Encomendación de ordenanzas a los hdD.html
+Apologética/Análisis de Doctrinas/La Iglesia/Global Unified Church.html
+Apologética/Análisis de Doctrinas/La Iglesia/Ecumenismo.html
+Apologética/Análisis de Doctrinas/God Related/Doctrinas tocantes a la(s) Persona(s) de Dios.html
+Apologética/Análisis de Doctrinas/La Iglesia/Universal Unified Church.html
+Apologética/Análisis de Doctrinas/Voluntad Manipulada.html
+Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/Mormonismo/Mormonismo.html
+Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/Catolicismo/Discrepancias Catolicas en el Evangelio.html
+Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/Carismaticos/NAR (Nueva reformacion apostolica)/Discrepancias en el Evangelio.html
+Compilados de Información para Estudios/Estudio de los Ángeles.html
+Compilados de Información para Estudios/Ilustraciones.html
+Compilado Unidad Doctrinal.html
+index.html
+Doctrinas/Procesos Doctrinas/*
+Doctrinas/La Doctrina de la Deuda.html
+Doctrinas/La Doctrona de la Fe.html
+Doctrinas/Dios habla por necesidad.html
+Compilados de Información para Estudios/Relevant Doctrines and group Labels _ Nombres Relevantes de Doctrinas y Grupos.html
+
+# VACÍO: 0 caracteres de texto. Candidato a excluidos.txt.
+Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/Carismaticos/Asambleas de Dios/Discrepancias en el Evangelio.html
+
+# --- PENDIENTE: duplicados por resolver ---
+# Estos repiten a otro documento casi palabra por palabra. Ponerles las mismas
+# preguntas los haría competir entre sí, así que esperan tu decisión sobre cuál
+# se queda (el otro debería ir a excluidos.txt).
+Apologética/Análisis de Doctrinas/La Iglesia/La Disciplina de parte de la Iglesia.html
+Apologética/Análisis de Doctrinas/La Iglesia/Gobierno Presbítero de la Iglesia.html
+Apologética/Análisis de Doctrinas/La Iglesia/Inexistencia de misiones.html
+Apologética/Análisis de Doctrinas/La Iglesia/No hay misiones.html
+# Esta es "La Caída de la Gracia", la versión nueva del mismo documento.
+Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/La Perdida de la Salvación.html
+# Mismo texto que "Los 3 Cielos.html".
+Doctrinas/La Doctrina del Cielo.html
+# Mismo texto que "La Iglesia de Cristo/La Iglesia de Cristo.html".
+Doctrinas/La Iglesia de Cristo/Eclesiología.html
+# Mismo texto que "Compilados .../La existencia de Dios.html".
+Compilados de Información para Estudios/Why do we believe God Exist.html

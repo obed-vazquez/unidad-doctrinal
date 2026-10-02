@@ -1,0 +1,402 @@
+{
+  "_lee_esto": "Caché de preguntas por documento. Lo genera una LLM siguiendo scripts/REGENERAR-PREGUNTAS.md y lo consume seo_postprocess.py, que las inyecta como bloque visible y como JSON-LD. No se edita a mano salvo para corregir una pregunta puntual.",
+  "_formato": "ruta relativa al repositorio, con '/' como separador -> lista de preguntas en lenguaje natural, tal como las teclearía alguien en un buscador.",
+  "documentos": {
+    "Apologética/Análisis de Doctrinas/Compilados de Idiologías/La Depravación Total del Hombre.html": [
+      "¿Qué es la depravación total del hombre?",
+      "¿El hombre nace con pecado original?",
+      "¿Puede alguien llegar al cielo por sus propias obras?",
+      "¿Qué pasa con los niños que mueren antes de tener discernimiento?",
+      "¿Qué es el pelagianismo?",
+      "¿Qué significa Romanos 5:12, por cuanto todos pecaron?",
+      "¿El pecado afectó la mente del hombre o solo su voluntad?",
+      "¿El hombre es pecador porque peca o peca porque es pecador?"
+    ],
+    "Apologética/Análisis de Doctrinas/Compilados de Idiologías/La Naturaleza de Dios — Posiciones sobre la Trinidad.html": [
+      "¿Cuántos dioses hay según la Biblia?",
+      "¿Los mormones creen en la Trinidad?",
+      "¿Qué es el triteísmo?",
+      "¿Qué significa el Shemá, Jehová nuestro Dios, Jehová uno es?",
+      "¿Qué es el unitarismo?",
+      "¿Qué significa Juan 17:3, el único Dios verdadero?"
+    ],
+    "Apologética/Análisis de Doctrinas/Doctrina de la Prosperidad.html": [
+      "¿Qué es el evangelio de la prosperidad?",
+      "¿Es bíblica la confesión positiva?",
+      "¿Dios promete riqueza y salud a los creyentes?",
+      "¿La enfermedad y la pobreza son castigo por falta de fe?"
+    ],
+    "Apologética/Análisis de Doctrinas/God Related/Cristo no omnisciente.html": [
+      "¿Jesús dejó de ser omnisciente al hacerse hombre?",
+      "¿Por qué Jesús crecía en sabiduría si era Dios?",
+      "¿Cristo renunció a sus atributos divinos en la encarnación?"
+    ],
+    "Apologética/Análisis de Doctrinas/God Related/El Arrianismo de TJ.html": [
+      "¿Los Testigos de Jehová creen en la Trinidad?",
+      "¿Jesús fue creado por Dios?",
+      "¿Qué es el arrianismo?",
+      "¿Qué significa primogénito de toda creación en Colosenses 1:15?",
+      "¿Por qué Jesús dijo que no sabía el día ni la hora?",
+      "¿El Espíritu Santo es una persona o una fuerza activa?"
+    ],
+    "Apologética/Análisis de Doctrinas/God Related/La imperfección de Dios.html": [
+      "¿Dios es perfecto?",
+      "¿Puede existir un Dios imperfecto?",
+      "¿Qué implicaría que Dios no fuera perfecto?"
+    ],
+    "Apologética/Análisis de Doctrinas/God Related/La inexistencia de un Dios creador.html": [
+      "¿Existe un Dios creador?",
+      "¿Qué argumentos hay a favor de la existencia de Dios?",
+      "¿Qué es el argumento de la causa no causada?",
+      "¿El diseño del universo prueba que hay un creador?"
+    ],
+    "Apologética/Análisis de Doctrinas/God Related/Modalismo.html": [
+      "¿Qué es el modalismo?",
+      "¿Qué enseña la doctrina Solo Jesús?",
+      "¿Padre, Hijo y Espíritu Santo son modos del mismo Dios?",
+      "¿Qué es el sabelianismo?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Biblia/Is The Bible Inspired/Is the Bible God’s Revelation_.html": [
+      "How do we know the Bible is God's revelation?",
+      "How was the canon of the Bible determined?",
+      "What criteria identify a book as inspired by God?",
+      "Is it circular reasoning to prove the Bible using the Bible?",
+      "What is the Textus Receptus?",
+      "How did Jesus validate the Old Testament as Scripture?",
+      "Who decided which books belong in the Bible?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Biblia/La Biblia - La Palabra de Dios.html": [
+      "¿La Biblia es realmente la palabra de Dios?",
+      "¿Por qué Dios ordenó matar a los niños en Números 31?",
+      "¿Por qué la ley mandaba que la mujer violada se casara con su agresor?",
+      "¿Hay pasajes inmorales en la Biblia?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Disciplina de parte de la Iglesia.html": [
+      "¿Cómo debe disciplinar la iglesia a un miembro en pecado?",
+      "¿La iglesia puede expulsar a un miembro?",
+      "¿Se le puede quitar un cargo de liderazgo a alguien por pecado?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Iglesia/Anti-misionismo.html": [
+      "¿Qué es el anti-misionismo?",
+      "¿Son bíblicas las misiones de la iglesia?",
+      "¿La estructura actual de misiones tiene base en la Escritura?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Iglesia/Cena del Señor de Comunión Abierta.html": [
+      "¿Quién puede tomar la Santa Cena?",
+      "¿Qué es la comunión abierta, cercana y cerrada?",
+      "¿Hay que ser miembro de la iglesia para tomar la Cena del Señor?",
+      "¿Judas participó en la Cena del Señor?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Iglesia/Doctrina de la Eclesiogénesis bautismal.html": [
+      "¿Qué es la eclesiogénesis bautismal?",
+      "¿El bautismo crea una iglesia local?",
+      "¿El bautismo añade a la iglesia o la funda?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Iglesia/Gobierno Interdependiente de la Iglesia.html": [
+      "¿Qué es el gobierno interdependiente de la iglesia?",
+      "¿Una iglesia local tiene autoridad sobre otra?",
+      "¿Sobre esta roca edificaré mi iglesia se refiere a Pedro?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Iglesia/Gobierno Presbiteriano de la Iglesia.html": [
+      "¿Qué es el gobierno presbiteriano de la iglesia?",
+      "¿Quién gobierna la iglesia según la Biblia?",
+      "¿Es bíblico que la iglesia sea gobernada por ancianos?",
+      "¿Presbítero, pastor, anciano y obispo son lo mismo?",
+      "¿Quién administra los recursos y las ofrendas de la iglesia?",
+      "¿Qué significa Hechos 4:35, lo ponían a los pies de los apóstoles?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Iglesia/Lord Supper Open Comunion.html": [
+      "Who can take the Lord's Supper?",
+      "What is open, close and closed communion?",
+      "Do you have to be a church member to take communion?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Perdida de la Salvación.html": [
+      "¿Se puede perder la salvación?",
+      "¿Es bíblico salvo siempre salvo?",
+      "¿Un cristiano que peca pierde la salvación?",
+      "¿Se puede recuperar la salvación perdida?",
+      "¿Qué significa Gálatas 5:4, de la gracia habéis caído?",
+      "¿La parábola de las diez vírgenes habla de perder la salvación?"
+    ],
+    "Apologética/Análisis de Doctrinas/La Salvación Bautismal.html": [
+      "¿El bautismo salva?",
+      "¿Es necesario bautizarse para ser salvo?",
+      "¿Se puede ser salvo sin bautizarse?",
+      "¿El bautismo perdona los pecados o solo los simboliza?",
+      "¿Qué significa Hechos 2:38, bautícese cada uno para perdón de los pecados?",
+      "¿Marcos 16:16 enseña que el bautismo es necesario para la salvación?",
+      "¿Qué significa Hechos 22:16, bautízate y lava tus pecados?",
+      "¿Qué enseñaban los primeros cristianos sobre el bautismo?"
+    ],
+    "Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/Calvinismo/Monergismo.html": [
+      "¿Qué es el monergismo?",
+      "¿Cuál es la diferencia entre monergismo y sinergismo?",
+      "¿La fe es un don de Dios o una decisión del hombre?",
+      "¿Qué es la gracia irresistible?",
+      "¿Qué es el semipelagianismo?",
+      "¿Qué significa Juan 6:44, ninguno puede venir a mí si el Padre no le trajere?",
+      "¿El hombre puede resistir el llamado de Dios?",
+      "¿La salvación depende de la decisión del hombre o solo de Dios?"
+    ],
+    "Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/IAFCJ/Discrepancias en el Evangélio.html": [
+      "¿Qué enseña la IAFCJ sobre la seguridad eterna?",
+      "¿Cuáles son las discrepancias doctrinales de la IAFCJ?"
+    ],
+    "Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/JW/Discrepancias en el Evangélio.html": [
+      "¿Se puede interpretar la Biblia sin la organización de los Testigos de Jehová?",
+      "¿Solo se salvan los que están en la organización de los Testigos de Jehová?",
+      "¿Qué enseñan los Testigos de Jehová sobre el infierno?"
+    ],
+    "Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/JW/Jehovah Witnesses.html": [
+      "¿Qué creen los Testigos de Jehová?",
+      "¿Los Testigos de Jehová creen que Jesús es Miguel el arcángel?",
+      "¿Los Testigos de Jehová creen en la resurrección corporal de Cristo?",
+      "¿Qué son los 144 mil de los Testigos de Jehová?"
+    ],
+    "Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/JW/La Inexistencia del Infierno.html": [
+      "¿Existe el infierno?",
+      "¿Los muertos están inconscientes según la Biblia?",
+      "¿Qué significa que el alma que pecare esa morirá, en Ezequiel 18:4?"
+    ],
+    "Apologética/Análisis de Doctrinas/Otros Evangelios - Religiones/Otros Evangelios.html": [
+      "¿Qué es otro evangelio según Gálatas 1?",
+      "¿Cómo se reconoce un evangelio falso?",
+      "¿Qué pasó en Hechos 15 con los que añadían la circuncisión al evangelio?"
+    ],
+    "Apologética/Análisis de Doctrinas/Persistencia de los Milagros.html": [
+      "¿Siguen existiendo los milagros hoy?",
+      "¿Cesaron los dones milagrosos al completarse la Biblia?",
+      "¿Cuál era el propósito de los milagros en la Biblia?"
+    ],
+    "Apologética/Conclusiónes/Conclusión de Gobierno Presbítero de la Iglesia Interdependiente.html": [
+      "¿Quién tiene la autoridad en la iglesia, los ancianos o la congregación?",
+      "¿A quién le fue encomendada la Gran Comisión?",
+      "¿Cómo eligió la iglesia primitiva a sus diáconos?"
+    ],
+    "Apologética/Conclusiónes/Conclusión de la Pérdida de la Salvación.html": [
+      "¿Cuál es la conclusión sobre si se pierde la salvación?",
+      "¿Qué versículos enseñan que la salvación es eterna?",
+      "¿Qué significa nadie las arrebatará de mi mano, en Juan 10:28-29?"
+    ],
+    "Apologética/Conclusiónes/Conclusión de la Salvación Bautismal.html": [
+      "¿Cuál es la conclusión sobre si el bautismo salva?",
+      "¿Cómo se salvó el ladrón en la cruz si no fue bautizado?",
+      "¿Qué significa que Pablo no fue enviado a bautizar sino a predicar?"
+    ],
+    "Apologética/Terminología.html": [
+      "¿Qué es el razonamiento inductivo y el deductivo?",
+      "¿Qué es la lógica aplicada al estudio bíblico?",
+      "¿Qué significa argumentar correctamente en teología?",
+      "¿Cuál es la diferencia entre metáfora y símil?",
+      "¿Qué es una sinécdoque y qué es una metonimia?",
+      "¿Qué figuras retóricas aparecen en la Biblia?"
+    ],
+    "Compilados de Información para Estudios/Belief system essence defining inquiries.html": [
+      "What questions define the essence of a belief system?",
+      "How do you compare different religions objectively?",
+      "What is the meaning and purpose of life according to a belief system?"
+    ],
+    "Compilados de Información para Estudios/El Divorcio.html": [
+      "¿Qué dice la Biblia sobre el divorcio?",
+      "¿Es pecado divorciarse?",
+      "¿Se puede volver a casar una persona divorciada?",
+      "¿Qué significa la excepción por causa de fornicación en Mateo 19:9?"
+    ],
+    "Compilados de Información para Estudios/Estudio de Hermenéutica .html": [
+      "¿Qué es la hermenéutica bíblica?",
+      "¿Cuáles son las reglas para interpretar la Biblia?",
+      "¿Qué significa que la Biblia es su propio intérprete?",
+      "¿Cómo saber si estoy interpretando mal un versículo?"
+    ],
+    "Compilados de Información para Estudios/Estudio de Mariología .html": [
+      "¿Qué enseña la Biblia sobre María?",
+      "¿Qué fue el Concilio de Éfeso y el título Theotokos?",
+      "¿Es María mediadora entre Dios y los hombres?",
+      "¿María nació sin pecado original?"
+    ],
+    "Compilados de Información para Estudios/Estudio de la Biblia.html": [
+      "¿Qué es el canon de la Biblia?",
+      "¿Cómo llegaron hasta nosotros los manuscritos bíblicos?",
+      "¿Qué significa que la Biblia es inspirada y preservada?",
+      "¿Por qué algunas Biblias modernas quitan versículos?",
+      "¿Qué son los códices Vaticanus y Sinaiticus?",
+      "¿Qué son los autógrafos bíblicos?"
+    ],
+    "Compilados de Información para Estudios/Estudio de la Oración.html": [
+      "¿Cómo se debe orar?",
+      "¿Qué tipos de oración hay en la Biblia?",
+      "¿Por qué Dios no escucha algunas oraciones?",
+      "¿Hay que gritar o usar palabras rebuscadas para orar?",
+      "¿Se puede orar a María o a los santos?",
+      "¿Con qué frecuencia debe orar un cristiano?"
+    ],
+    "Compilados de Información para Estudios/Estudio de la Redención.html": [
+      "¿Qué significa redención en la Biblia?",
+      "¿Por qué la Biblia usa la esclavitud como imagen del pecado?",
+      "¿Qué es ser redimido por Cristo?",
+      "¿Quién puede ser redentor según la Biblia?",
+      "¿Qué enseña el libro de Rut sobre la redención?",
+      "¿Con qué fuimos redimidos según 1 Pedro 1:18-19?"
+    ],
+    "Compilados de Información para Estudios/Estudio de la Salvación _ Proceso de conversión del creyente _ Elementos necesarios.html": [
+      "¿Cuáles son los elementos necesarios para la salvación?",
+      "¿Qué es el arrepentimiento bíblico?",
+      "¿Qué significa metanoia?",
+      "¿Cómo es el proceso de conversión de un creyente?"
+    ],
+    "Compilados de Información para Estudios/Estudio del Nuevo Nacimiento.html": [
+      "¿Qué es el nuevo nacimiento?",
+      "¿Nacer del agua en Juan 3:5 se refiere al bautismo?",
+      "¿Qué es la regeneración bautismal?",
+      "¿Cómo sé si he nacido de nuevo?"
+    ],
+    "Compilados de Información para Estudios/La Iglesia/A universal Invisible Church_.html": [
+      "Is there a universal invisible church?",
+      "Does being saved make you part of the church?",
+      "Does being part of the church mean you are saved?"
+    ],
+    "Compilados de Información para Estudios/La Iglesia/Estudio de la Autoridad de la Iglesia de Cristo.html": [
+      "¿Quién tiene autoridad para bautizar?",
+      "¿A quién le dio Cristo la Gran Comisión, a los apóstoles o a la iglesia?",
+      "¿De dónde viene la autoridad de la iglesia de Cristo?"
+    ],
+    "Compilados de Información para Estudios/La Iglesia/Estudio de la Iglesia de Cristo.html": [
+      "¿Qué es una iglesia neotestamentaria?",
+      "¿La iglesia es el edificio o las personas?",
+      "¿Se puede expulsar a alguien de la membresía de la iglesia?"
+    ],
+    "Compilados de Información para Estudios/La Iglesia/Estudio del Bautismo.html": [
+      "¿Quién puede administrar un bautismo válido?",
+      "¿Es válido un bautismo hecho por alguien sin autoridad?",
+      "¿Por qué se bautizó Jesús?"
+    ],
+    "Compilados de Información para Estudios/La existencia de Dios.html": [
+      "Why do we believe God exists?",
+      "What are the main arguments for the existence of God?",
+      "Does the design of the universe prove a creator?"
+    ],
+    "Compilados de Información para Estudios/Proceso de Convicción.html": [
+      "¿Qué es la convicción bíblica?",
+      "¿Cuáles son las fases de la convicción según la Biblia?",
+      "¿Qué significa plenamente convencido en Romanos 14:5?",
+      "¿Cómo sé si mi convicción es bíblica o solo costumbre heredada?",
+      "¿Qué papel tiene la oración al formar una convicción?",
+      "¿Por qué hay que consultar pasajes paralelos antes de concluir algo?"
+    ],
+    "Doctrinas/La Doctrina de Satanás.html": [
+      "¿Quién es Satanás según la Biblia?",
+      "¿Satanás era un ángel o un querubín?",
+      "¿Cuáles son los nombres de Satanás en la Biblia?"
+    ],
+    "Doctrinas/La Doctrina de la Trinidad.html": [
+      "¿Qué es la Trinidad?",
+      "¿Cómo pueden ser tres personas un solo Dios?",
+      "¿Jesús es Dios o es el Hijo de Dios?"
+    ],
+    "Doctrinas/La Doctrina de los Juicios Bíblicos.html": [
+      "¿Cuántos juicios menciona la Biblia?",
+      "¿Qué pasa inmediatamente después de morir?",
+      "¿Qué es el juicio del Gran Trono Blanco?"
+    ],
+    "Doctrinas/La Doctrina de los Ángeles.html": [
+      "¿Qué tipos de ángeles hay en la Biblia?",
+      "¿Qué son los querubines?"
+    ],
+    "Doctrinas/La Doctrina del Infierno.html": [
+      "¿Qué es el infierno según la Biblia?",
+      "¿Cuál es la diferencia entre Seol, Hades y Gehena?",
+      "¿Qué es la muerte segunda?"
+    ],
+    "Doctrinas/La Iglesia de Cristo/La Doctrina de la Estructura de la Iglesia de Cristo .html": [
+      "¿Cómo se entra a la iglesia de Cristo?",
+      "¿Cómo crece y se multiplica una iglesia local?",
+      "¿Qué significa que se añadieron en Hechos 2:41?",
+      "¿Puede una iglesia perder su autoridad?",
+      "¿Qué doctrinas debo revisar antes de bautizarme?",
+      "¿Qué significa quitaré tu candelero de su lugar en Apocalipsis 2:5?"
+    ],
+    "Doctrinas/La Iglesia de Cristo/La Iglesia de Cristo.html": [
+      "¿Qué es la iglesia de Cristo?",
+      "¿La iglesia es el reino de los cielos en la tierra?",
+      "¿Por qué se llama a la iglesia el cuerpo de Cristo?"
+    ],
+    "Doctrinas/La Iglesia de Cristo/Las ordenanzas/La Doctrina del Bautismo.html": [
+      "¿Qué significa la palabra bautismo en griego?",
+      "¿El bautismo debe ser por inmersión o por aspersión?",
+      "¿Qué hace que un bautismo sea escritural?",
+      "¿Qué hace inválido un bautismo?",
+      "¿Quién puede administrar el bautismo con autoridad?",
+      "¿Es válido el bautismo de alguien que no estaba realmente convertido?"
+    ],
+    "Doctrinas/Los 3 Cielos.html": [
+      "¿Cuáles son los tres cielos de la Biblia?",
+      "¿Qué significa shamáyim en hebreo?",
+      "¿A qué se refiere Pablo con el tercer cielo en 2 Corintios 12?"
+    ],
+    "Doctrinas/Salvación y Principios/70 PROFECÍAS CUMPLIDAS EN JESUCRISTO.html": [
+      "¿Qué profecías del Antiguo Testamento cumplió Jesucristo?",
+      "¿Cuántas profecías mesiánicas hay en la Biblia?",
+      "¿Cómo se prueba que Jesús es el Mesías anunciado?",
+      "¿Dónde anuncia el Antiguo Testamento que el Mesías sería descendiente de Abraham?",
+      "¿Qué profecía habla de la simiente de la mujer en Génesis 3:15?",
+      "¿Cuántos años antes de Cristo se escribieron las profecías mesiánicas?",
+      "¿Qué profecía anunciaba que el Mesías predicaría en Galilea?",
+      "¿Dónde dice el Antiguo Testamento que vendría un profeta como Moisés?"
+    ],
+    "Doctrinas/Salvación y Principios/Doctrina de la Bíblia.html": [
+      "¿Por qué se dice que la Biblia es inspirada por Dios?",
+      "¿Qué significa 2 Timoteo 3:16, toda la Escritura es inspirada?",
+      "¿Es la Biblia suficiente como regla de fe?"
+    ],
+    "Doctrinas/Salvación y Principios/Doctrina de la Salvación _ Como ir al cielo_.html": [
+      "¿Cómo puedo ir al cielo?",
+      "¿Qué es la soteriología?",
+      "¿Qué pasa con las personas que nunca pecaron conscientemente?"
+    ],
+    "Doctrinas/Salvación y Principios/Doctrina de la Seguridad Eterna.html": [
+      "¿Qué es la seguridad eterna?",
+      "¿Cómo puedo estar seguro de que soy salvo?",
+      "¿La salvación depende de lo que yo sienta?"
+    ],
+    "Doctrinas/Salvación y Principios/Doctrina del Evangelio.html": [
+      "¿Qué es el evangelio?",
+      "¿Qué significa euangélion, buenas nuevas?",
+      "¿Cuáles son los elementos del evangelio según 1 Corintios 15?"
+    ],
+    "Doctrinas/Salvación y Principios/Doctrina del Nuevo Nacimiento.html": [
+      "¿Qué significa nacer de nuevo?",
+      "¿Por qué Jesús dijo que hay que nacer de nuevo para entrar al cielo?",
+      "¿Qué papel tiene la Palabra en el nuevo nacimiento?",
+      "¿Qué significa ser sellado con el Espíritu Santo?",
+      "¿En qué se parece el nuevo nacimiento al nacimiento físico?",
+      "¿Qué es la adopción de hijos en Romanos 8?"
+    ],
+    "Evangelio y Primeros pasos/1) La Salvación.html": [
+      "¿Qué necesito para ser salvo?",
+      "¿Qué pasa si no recuerdo si me convertí de verdad?",
+      "¿Qué significa examinaos a vosotros mismos en 2 Corintios 13:5?"
+    ],
+    "Evangelio y Primeros pasos/2) El Bautismo.html": [
+      "¿Por qué debo bautizarme después de creer?",
+      "¿En qué iglesia me debo bautizar?",
+      "¿El bautismo es el primer acto de obediencia?"
+    ],
+    "Evangelio y Primeros pasos/2_) Seguridad Eterna.html": [
+      "¿Puedo perder mi salvación si peco después de convertirme?",
+      "¿Qué hago si no siento que soy salvo?",
+      "¿Qué son las dos naturalezas del creyente en Romanos 7?"
+    ],
+    "Evangelio y Primeros pasos/El Evangelio - Versículos selectos.html": [
+      "¿Qué versículos explican el evangelio?",
+      "¿Qué versículos usar para presentar la salvación a alguien?"
+    ],
+    "Hermenéutica - Análisis y Estudio de la Biblia.html": [
+      "¿Qué significa hermenéutica?",
+      "¿Qué es la exégesis bíblica?",
+      "¿Cuál es la diferencia entre exégesis y hermenéutica?",
+      "¿Se puede entender la Biblia sin el Espíritu Santo?",
+      "¿Cómo evitar los prejuicios al interpretar la Biblia?",
+      "¿Qué significa escudriñad las Escrituras en Juan 5:39?"
+    ]
+  }
+}

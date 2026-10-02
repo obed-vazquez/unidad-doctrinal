@@ -1,0 +1,18 @@
+<!-- ud-analytics: fragmento inyectado en cada documento publicado.
+     Solo se inyecta con --analytics, que pasa el workflow de despliegue; en la
+     vista previa local queda fuera para no mandar visitas falsas. Ni el token
+     del beacon ni el Measurement ID son secretos: viajan en el HTML público.
+     Para cambiar o agregar herramientas, edita este archivo y nada más.
+     El marcador "ud-analytics" de arriba es lo que hace la inyección idempotente. -->
+
+<!-- Cloudflare Web Analytics -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e6b10267c958444a9a7070801f4fd8a3"}'></script>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-60VD5TG423"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-60VD5TG423');
+</script>

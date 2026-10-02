@@ -28,4 +28,5 @@ jobs:
       - name: Revisar post-proceso sin publicar
         run: |
           python scripts/seo_postprocess.py \
-            --src . --out _site --dry-run --check --max-fallback 5
+            --src . --out _site --dry-run --check --estricto \
+            --max-fallback 5 --reporte-preguntas

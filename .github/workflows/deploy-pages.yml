@@ -38,7 +38,7 @@ jobs:
           python-version: '3.13'
 
       - name: Post-procesar para buscadores
-        run: python scripts/seo_postprocess.py --src . --out _site --check
+        run: python scripts/seo_postprocess.py --src . --out _site --check --analytics
 
       - name: Subir artefacto
         uses: actions/upload-pages-artifact@v3
